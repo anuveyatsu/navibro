@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Navigator</title>
+</head>
+<body>
+
+  <h1>You searched for: {{ search_info['search_term'] }}</h1>
+  <p>Number of results returned: {{ search_info['total_count'] }}</p>
+  <p>Incomplete results: {{ search_info['incomplete_results'] }}</p>
+  {% for item in data %}
+  <h2>{{loop.index}}. {{ item['name'] }}</h2>
+  <h3> Created at {{ item['created_at'] }}</h3>
+  <a href="{{ item['owner']['url'] }}"><img src="{{ item['owner']['avatar_url'] }}" alt="avatar" height="42" width="42"/></a>
+  {{ item['owner']['login'] }}
+  <h3>LastCommit</h3>
+  <p>sha: {{ item['sha'] }}
+  <p>message: {{ item['commit_message'] }}
+  <p>author: {{ item['commit_author_name'] }}
+  <hr/>
+  {% endfor %}
+
+</body>
+</html>
