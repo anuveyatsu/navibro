@@ -9,7 +9,7 @@ Due to 6 API calls being made, rendering page may take around 10-20 seconds.
 Before getting started make sure you have correct version of Python installed.
 Also, you will need package management system, 'pip' is used in the instruction below.
 
-This package includes:
+**This package includes:**
 a) app.py -- solution
 b) templates/template.html -- the template file
 c) dependencies -- all required dependencies
