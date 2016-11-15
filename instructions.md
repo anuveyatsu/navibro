@@ -10,13 +10,19 @@ Before getting started make sure you have correct version of Python installed.
 Also, you will need package management system, 'pip' is used in the instruction below.
 
 **This package includes:**
+
 a) app.py -- solution
+
 b) templates/template.html -- the template file
+
 c) dependencies -- all required dependencies
+
 d) cover.txt -- this file (includes description and instructions)
 
 e) test.py -- unit tests using unittest, flask_testing extension, and vcrpy
+
 f) fixtures folder -- contains vcr_cassettes
+
 
 ### Running SuperNavi3333 locally
 
